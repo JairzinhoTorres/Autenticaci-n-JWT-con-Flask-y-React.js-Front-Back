@@ -6,10 +6,10 @@ export const Navbar = () => {
   const { store,actions } = useContext(Context);
   console.log(store.favoritos);
   return (
-    <nav className="navbar navbar-light bg-light mb-3">
+    <nav className="navbar navbar-light bg-black mb-3">
       <Link to="/">
         <img
-          src="https://1000logos.net/wp-content/uploads/2017/06/Star-Wars-Logo-1.png"
+          src="https://lumiere-a.akamaihd.net/v1/images/desktop-retina_6b8e649c.png"
           className="card-img-top "
           alt="..."
           style={{ width: "218px" }}

@@ -38,9 +38,15 @@ export const Home = () => {
   // }, []);
 
   return (
-    <div className="container text-center">
-		<h1>PERSONAJES</h1>
-		<div>
+
+    
+    // aca se trae a la card de personajes
+    <div lassName="container" >
+
+    <div className="">
+    <h1 className=" rounded-3 text-white text-center bg-black border-white p-2 border border-2"><strong>Characters</strong></h1>		
+    <div className= "d-flex">
+    <div className="d-flex scrollable">
       {store.personajes.map((cadaPersonaje, index) => (
         <Characters
           key={index}
@@ -51,8 +57,13 @@ export const Home = () => {
         />
       ))}
 	  </div>
-	  <div>
-	  <p>VEHICULOS</p>
+    </div>
+    </div>
+    {/* aca se trae la card de vehiculos */}
+	  <div className="">
+    <h1 className=" rounded-3 text-white text-center bg-black border-white p-2 border border-2"><strong>VEHICULOS</strong></h1>		
+    <div className= "d-flex">
+    <div className="d-flex scrollable">
       {store.vehiculos.map((cadaVehiculo, index) => (
         <Vehicle
           key={index}
@@ -61,9 +72,13 @@ export const Home = () => {
           modeloVehiculo={cadaVehiculo.model}
         />
       ))}
+      </div>
 	  </div>
-<div>
-<p>PLANETAS</p>
+    </div>
+<div className="">
+<h1 className=" rounded-3 text-white text-center bg-black border-white p-2 border border-2"><strong>PLANETAS</strong></h1>	
+<div className= "d-flex">
+<div className="d-flex scrollable">
 	  {store.planetas.map((cadaPlaneta, index) => (
         <Planets
           key={index}
@@ -75,5 +90,8 @@ export const Home = () => {
       ))}
 	  </div>
     </div>
+    </div>
+    </div>
+
   );
 };

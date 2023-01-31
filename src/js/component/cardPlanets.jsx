@@ -4,8 +4,11 @@ import { Link, useParams} from "react-router-dom";
 
 
 export const Planets = ({ nombrePlaneta, diametroPlaneta, climaPlaneta,id}) => {
+
     return ( 
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="container">
+    <div className="col m-4 d-flex">
+    <div className="card H-100" style={{ width: "18rem" }}>
       <img
         src={"https://starwars-visualguide.com/assets/img/planets/"+(id)+".jpg"}
         className="card-img-top"
@@ -21,6 +24,8 @@ export const Planets = ({ nombrePlaneta, diametroPlaneta, climaPlaneta,id}) => {
           <i className="fa fa-heart"> </i>
           </button>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

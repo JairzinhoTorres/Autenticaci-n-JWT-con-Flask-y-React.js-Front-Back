@@ -20,7 +20,9 @@ const{actions}=useContext(Context)
    
 
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="container">
+    <div className="col m-4 d-flex">
+    <div className="card h-100" style={{ width: "18rem" }}>
       <img
         src={"https://starwars-visualguide.com/assets/img/characters/"+(id)+".jpg"}
         className="card-img-top"
@@ -36,6 +38,8 @@ const{actions}=useContext(Context)
           <i className="fa fa-heart"> </i>
           </button>
       </div>
+    </div>
+    </div>
     </div>
   );
 };
